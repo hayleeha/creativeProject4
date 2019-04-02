@@ -12,11 +12,13 @@
     <h1>SHARE THE LOVE</h1>
     <div class="heading">
       <div class="circle">1</div>
-      <h2>Share your creation:</h2>
+      <h2>Share Your Creation:</h2>
     </div>
     <div class="add">
       <div class="form">
         <input v-model="title" placeholder="Title">
+        <p></p>
+        Tell us a little bit about your creation and instructions on how to do it: 
         <p></p>
         <textarea v-model="flavorText" placeholder="Description"></textarea>
         <input type="file" name="photo" @change="fileChanged">
@@ -31,7 +33,7 @@
 
    <div class="heading">
       <div class="circle">2</div>
-      <h2>Edit/Delete your Post</h2>
+      <h2>Edit/Delete your Post:</h2>
     </div>
     <div class="edit">
       <div class="form">

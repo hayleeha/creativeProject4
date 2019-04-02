@@ -4,24 +4,34 @@
 <head>
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="/style.css" />
-  <title>SHARE the <3</title>
+  <title>Journaling made Easy</title>
 </head>
 
 <body>
   <div id="admin" class="content">
-    <h1>SHARE THE LOVE</h1>
+    <h1>JOURNALING MADE EASY:</h1>
     <div class="heading">
-      <div class="circle">1</div>
-      <h2>Share Your Creation:</h2>
+      <!-- <div class="circle">1</div> -->
+      <h2>STEP #1:</h2>
+      <p></p>
+      <h4>Enter the date</h4>
     </div>
     <div class="add">
       <div class="form">
-        <input v-model="title" placeholder="Title">
+        <input v-model="title" placeholder="Date">
         <p></p>
-        Tell us a little bit about your creation and instructions on how to do it: 
+        <!-- <div class="circle">2</div> -->
+        <div class="heading">
+        <h2>STEP #2:</h2>
+        <h4>Add a few sentences of the most exciting parts of your day. Or skip it if you don't want to!</h4>
+      </div>
+        <textarea v-model="flavorText" placeholder="Write about your day..."></textarea>
         <p></p>
-        <textarea v-model="flavorText" placeholder="Description"></textarea>
-        <input type="file" name="photo" @change="fileChanged">
+        <div class="heading">
+        <h2>STEP #3:</h2>
+        <h4>Add a picture too!</h4>
+      </div>
+         <input type="file" name="photo" @change="fileChanged">
         <button @click="upload">Upload</button>
       </div>
       <div class="upload" v-if="addItem">
@@ -29,10 +39,15 @@
         <img :src="addItem.path" />
         <h3>Description: {{addItem.flavorText}}</h3>
       </div>
+  
+</div>
+
+  <div class="divider">
+    <hr>
   </div>
 
    <div class="heading">
-      <div class="circle">2</div>
+      <div class="circle">4</div>
       <h2>Edit/Delete your Post:</h2>
     </div>
     <div class="edit">
@@ -58,7 +73,7 @@
     </div>
 
   <div class="goback">
-  <a href="/index.html">Go Back</a>
+  <a href="/index.html">Go back to review/read your complete journal!</a>
   </div>
 
    <footer>

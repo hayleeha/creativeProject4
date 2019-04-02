@@ -60,13 +60,20 @@ body {
 /* Admin */
 .heading {
   display: flex;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .heading h2 {
   margin: 0px;
   margin-left: 10px;
+}
+
+.heading h4 {
+  margin: 0px;
+  margin-left: 10px;
+  color: #FF1493;
+  font-size: 25px;
 }
 
 .add, .edit {
